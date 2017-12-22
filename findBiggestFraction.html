@@ -1,14 +1,14 @@
 <script type="text/javascript">
 
-  function findBiggestFraction() {
-    var a = 5/9;
-    var b = 3/2;
-    if (a >= b) {
-      console.log("a is bigger")
+  function findBiggestFraction(frac1, frac2) {
+    var result;
+    if (frac1 > frac2) {
+      result = "fraction1 is bigger"
     } else {
-      console.log("b is bigger")
+      result = "fraction2 is bigger"
     }
+    return result;
   }
 
-  findBiggestFraction()
+  console.log(findBiggestFraction(2/4, 5/9));
 </script>
