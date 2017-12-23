@@ -1,0 +1,23 @@
+<script type="text/javascript">
+
+
+var Car = function (topSpeed, doors, name) {
+  this.topSpeed = topSpeed;
+  this.doors = doors;
+  this.name = name;
+  this.acceleration = function (speed, time) {
+    console.log(`acceleration speed of ${name} is ${speed * time}`);
+  };
+}
+
+var car1 = new Car(80, 4, 'mini');
+// car1.name = mini;
+car1.acceleration(80, 3)
+
+
+var car2 = new Car(90, 4);
+var car3 = new Car(100, 2);
+var car4 = new Car(120, 2);
+
+
+</script>
