@@ -1,0 +1,17 @@
+<script type="text/javascript">
+  var house = function(numbedrooms, numbathrooms, floors, rooms){
+    this.numbedrooms = numbedrooms;
+    this.numbathrooms = numbathrooms;
+    this.floors = floors;
+    this.rooms = rooms;
+    this.electricityuse = function electricityuse(people, rooms) {
+      console.log(people*rooms);
+    }
+  }
+  var house1 = new house(10, 5, 3, 30);
+  var house2 = new house (20,5,3,20);
+
+  house1.electricityuse(10, 3);
+  house2.electricityuse(2,1);
+
+</script>
