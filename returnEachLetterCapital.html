@@ -1,0 +1,16 @@
+<script type="text/javascript">
+  //you have a string as follows: heLLO, my name is BoNd, JameS BoNd
+  //return a string with each word capitalized and the rest lowercase
+
+  var originalString = "heLLO, my name is BoNd, JameS BoNd"
+    //everything to lower case
+  var lowerCaseArr = originalString.toLowerCase().split(" ");
+    //all first letters are capitalized within an array
+  var upperCaseArr = lowerCaseArr.map(function (word) {
+    return word[0].toUpperCase() + word.slice(1);
+  });
+    //new string with capital letters
+  var newString = upperCaseArr.join(" ")
+
+  console.log(newString);
+</script>
