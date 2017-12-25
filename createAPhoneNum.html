@@ -1,0 +1,21 @@
+<script type="text/javascript">
+//return a string as follows: (123) 456-7890
+var num = 3343566789;
+
+//convert a number to a string
+var string = num.toString();
+
+//split a string into an array
+var newString = string.split("");
+
+//slice unnecessary numbers and join back into a string
+var firstThree = newString.slice(0,3).join("");
+var secondThree = newString.slice(3, 6).join("");
+var thirdFour = newString.slice(6).join("");
+
+//concat three strings back into a phone number
+var fullNumber = "(" + firstThree +") " +secondThree + "-"+ thirdFour;
+
+//console log the full number
+console.log(fullNumber);
+</script>
