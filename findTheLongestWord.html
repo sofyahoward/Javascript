@@ -1,0 +1,18 @@
+<script type="text/javascript">
+  //return the biggest word in a string
+  var sen = ("i like to eat candy");
+  //split a string to make an array
+  var senArr = sen.split(" ");
+  //iterate through the array and return the length of each word +the actual word
+  var countLetters = senArr.map(function(word){
+  return(word.length + word);
+  });
+  //sort the array by numbers infront of words, remove all words that are not the highest and join the biggest word into a string
+  var Biggest = countLetters.sort().slice(-1).join();
+  //split the word string into an array and slice off the number, join it back into a string
+  var fullWord = Biggest.split("").slice(1).join("");
+
+  //log the result to a console
+  console.log(fullWord);
+
+</script>
