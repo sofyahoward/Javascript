@@ -1,0 +1,23 @@
+<script type="text/javascript">
+
+//take a string
+//convert all letters in it to the next letter in the alphabet
+//if it is a letter Z-make it become an A
+//capitalize vowels
+//return a new string
+function changeLetters(str){
+  var convertedStr = str.replace(/[a-zA-Z]/g, function(character) {
+  return (character === 'Z' || character === "z") ? "a" : String.fromCharCode(character.charCodeAt() + 1);
+});
+
+var result = convertedStr.replace(/a|o|i|e|u|/g, function(vowel) {
+  return vowel.toUpperCase();
+});
+
+return result;
+
+}
+console.log(changeLetters("HfldoZ"));
+
+
+</script>
