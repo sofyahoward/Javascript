@@ -1,0 +1,22 @@
+<script type="text/javascript">
+//create a function that adds all numbers within an array
+function SimpleAdding(num) {
+
+//make an empty array that pushes all numbers starting from 1 to the "num" variable
+  var list = [];
+    for (var i = 1; i <= num; i++) {
+    list.push(i);
+  }
+
+//use .reduce to add all numbers within an array
+var sum = list.reduce(function (a, b) {
+  return a + b;
+});
+
+//return the sum result
+  return sum;
+
+}
+
+console.log(SimpleAdding(20));
+</script>
