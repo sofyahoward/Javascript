@@ -1,0 +1,24 @@
+<script type="text/javascript">
+
+//function to capitalize letters in each word of a string
+function LetterCapitalize(str) {
+
+  //split the string to make an array
+  var newArr =str.split(' ');
+
+  //map through the array to return a new array with capital letters at the beginning of each word
+  var capitalArr = newArr.map(function(word){
+   return(word[0].toUpperCase() + word.slice(1));
+  });
+
+  //join the array to make a new string
+  var newString = capitalArr.join(" ");
+
+  //return the result
+  return (newString);
+}
+
+// keep this function call here
+LetterCapitalize(readline());
+
+</script>
