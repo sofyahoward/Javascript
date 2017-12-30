@@ -1,0 +1,18 @@
+<script type="text/javascript">
+
+//Using the JavaScript language, have the function AlphabetSoup(str) take the str string parameter being passed and return the string with the letters in alphabetical order (ie. hello becomes ehllo). Assume numbers and punctuation symbols will not be included in the string.
+//create a function that will sort letters in a string in an alphabetic order
+function AlphabetSoup(str) {
+
+//split the string into an array, then sort alphabetically, then join back into a string
+var newArr = str.split(""). sort().join("");
+
+//return the result
+  return newArr;
+
+}
+
+// keep this function call here
+AlphabetSoup("hello");
+
+</script>
