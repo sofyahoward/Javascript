@@ -12,12 +12,8 @@ function GetSum() {
     return a-b
   });
 
-  //Assign each argument to a local variable for a for loop to run.
-  var x = sorted[0];
-  var y = sorted[sorted.length - 1];
-
   //push the result into an empty array
-  for (var i = x; i <= y; i++) {
+  for (var i = sorted[0]; i <= sorted[sorted.length - 1]; i++) {
       allNumbers.push(i);
   }
 
