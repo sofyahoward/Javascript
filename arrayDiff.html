@@ -1,0 +1,14 @@
+<script type="text/javascript">
+  function array_diff(a, b) {
+    //make an empty array that will keep the data we need
+    var KeepArr = [];
+    //map through all items in array a
+    a.map(function(i){
+       if (i != b){
+      KeepArr.push(i);
+     }
+     });
+   //return KeepArr because it has the data we need
+   return KeepArr;
+};
+</script>
