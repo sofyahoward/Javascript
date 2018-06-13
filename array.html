@@ -1,0 +1,15 @@
+<script type="text/javascript">
+
+function DwindlingLooper(array){
+   var n = 0;
+   return function() {
+       for (var i = n; i < 3; i++) {
+      console.log(i);
+       n += 1;
+   }
+ }
+ }
+
+
+DwindlingLooper([1,2,3,4,5]);
+</script>

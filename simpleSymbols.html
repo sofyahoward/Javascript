@@ -1,0 +1,20 @@
+<script type="text/javascript">
+function SimpleSymbols(str) {
+  var newArr = str.split ("")
+  if (newArr.map(function (i) {
+    i == /[a-zA-Z]/gi && i+1 == "+" && i-1 == "+"
+  })) {
+    return "true";
+  } else {
+    return "false";
+  }
+}
+
+if (true) {
+
+} else {
+
+}
+SimpleSymbols("+d+=3=+s+");
+
+</script>

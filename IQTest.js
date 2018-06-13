@@ -21,10 +21,6 @@ function iqTest(numbers){
   }
   else{ var even = EvenArrPosition.join()
     return parseInt(even)+1}
-
-
-
 }
-
 
 iqTest("2 4 6 29 10")

@@ -1,0 +1,19 @@
+<script type="text/javascript">
+  function book(author, price, pages, chapters) {
+    this.author= author;
+    this.price= price;
+    this.pages= pages;
+    this.chapters= chapters;
+    this.pricePerPage= function(price, pages) {
+      console.log((price / pages));
+    }
+  }
+
+var harryPotter = new book('J.K Rowling', 5, 100, 10)
+  console.log(
+    harryPotter,
+    harryPotter.pricePerPage(5,100)
+  );
+  console.log(harryPotter);
+
+</script>

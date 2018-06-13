@@ -1,0 +1,21 @@
+<script type="text/javascript">
+  function student(firstName, lastName, age, gpa) {
+    this.firstName= firstName;
+    this.lastName= lastName;
+    this.age= age;
+    this.gpa= function gpa (test1, test2) {
+      console.log( (test1 + test2) / 2);
+    }
+
+
+  }
+
+
+
+var student1 = new student('bob', 'bobby', 19,)
+  console.log(
+    student1,
+    student1.gpa(98, 87)
+  );
+
+</script>
