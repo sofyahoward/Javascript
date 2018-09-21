@@ -32,7 +32,7 @@ function gradingStudents(grades) {
 //map over the array
   return grades.map(grade => {
     var roundedNum = (Math.ceil(grade/5)*5);
-    //if the grade is less than 38, return this grade
+    //if the grade is less than 38, return this grade.
     if (grade<38) return(grade)
     //otherwise compare the grade to the next multiple of 5 and return that number
     else if(roundedNum-grade < 3) return roundedNum;
